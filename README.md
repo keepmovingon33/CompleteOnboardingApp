@@ -1,2 +1,2 @@
 # CompleteOnboardingApp
-Build a complete onboarding app
+Build an Onboarding, Login/Sign-up flow
