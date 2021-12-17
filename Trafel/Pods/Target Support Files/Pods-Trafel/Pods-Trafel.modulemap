@@ -1,0 +1,6 @@
+framework module Pods_Trafel {
+  umbrella header "Pods-Trafel-umbrella.h"
+
+  export *
+  module * { export * }
+}

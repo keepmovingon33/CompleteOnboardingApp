@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		33226189276B78790084FA93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33226188276B78790084FA93 /* AppDelegate.swift */; };
 		3322618B276B78790084FA93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3322618A276B78790084FA93 /* SceneDelegate.swift */; };
 		33226190276B78790084FA93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3322618E276B78790084FA93 /* Main.storyboard */; };
-		33226192276B787B0084FA93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33226191276B787B0084FA93 /* Assets.xcassets */; };
 		33226195276B787B0084FA93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33226193276B787B0084FA93 /* LaunchScreen.storyboard */; };
 		3322619D276B7D460084FA93 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3322619C276B7D460084FA93 /* LoadingViewController.swift */; };
 		332261A1276B85FC0084FA93 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332261A0276B85FC0084FA93 /* Helper.swift */; };
@@ -20,7 +19,12 @@
 		332261AA276BA8F00084FA93 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332261A9276BA8F00084FA93 /* OnboardingViewController.swift */; };
 		332261AD276BBBEA0084FA93 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332261AC276BBBEA0084FA93 /* OnboardingCollectionViewCell.swift */; };
 		332261B0276BBD0D0084FA93 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332261AF276BBD0D0084FA93 /* Slide.swift */; };
+		33AE2DC7276D08C100CCFA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AE2DC6276D08C100CCFA49 /* Assets.xcassets */; };
+		33AE2DC9276D136C00CCFA49 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AE2DC8276D136C00CCFA49 /* HomeViewController.swift */; };
+		33AE2DCB276D21C700CCFA49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33AE2DCA276D21C700CCFA49 /* GoogleService-Info.plist */; };
 		33F9607B276BD27800CAB50C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9607A276BD27800CAB50C /* LoginViewController.swift */; };
+		33F9607D276CF51A00CAB50C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 33F9607C276CF51A00CAB50C /* Podfile */; };
+		EF22ACB4D77064E041617231 /* Pods_Trafel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC992CB7F09D0AFD713909F8 /* Pods_Trafel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +32,6 @@
 		33226188276B78790084FA93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3322618A276B78790084FA93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3322618F276B78790084FA93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		33226191276B787B0084FA93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33226194276B787B0084FA93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33226196276B787B0084FA93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3322619C276B7D460084FA93 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +42,14 @@
 		332261A9276BA8F00084FA93 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		332261AC276BBBEA0084FA93 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		332261AF276BBD0D0084FA93 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		33AE2DC6276D08C100CCFA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33AE2DC8276D136C00CCFA49 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		33AE2DCA276D21C700CCFA49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		33F9607A276BD27800CAB50C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		33F9607C276CF51A00CAB50C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6DA6272D788DB9A9E75BC90 /* Pods-Trafel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trafel.debug.xcconfig"; path = "Target Support Files/Pods-Trafel/Pods-Trafel.debug.xcconfig"; sourceTree = "<group>"; };
+		CC992CB7F09D0AFD713909F8 /* Pods_Trafel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trafel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5710706744D5C3B6F4E3463 /* Pods-Trafel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trafel.release.xcconfig"; path = "Target Support Files/Pods-Trafel/Pods-Trafel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF22ACB4D77064E041617231 /* Pods_Trafel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +67,11 @@
 		3322617C276B78790084FA93 = {
 			isa = PBXGroup;
 			children = (
+				33F9607C276CF51A00CAB50C /* Podfile */,
 				33226187276B78790084FA93 /* Trafel */,
 				33226186276B78790084FA93 /* Products */,
+				E59AD872326E8C67F11F62FB /* Pods */,
+				EE3726D55C2B5AC63372E896 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +93,10 @@
 				3322619E276B7D530084FA93 /* ViewControllers */,
 				33226188276B78790084FA93 /* AppDelegate.swift */,
 				3322618A276B78790084FA93 /* SceneDelegate.swift */,
+				33AE2DC6276D08C100CCFA49 /* Assets.xcassets */,
 				3322618E276B78790084FA93 /* Main.storyboard */,
-				33226191276B787B0084FA93 /* Assets.xcassets */,
 				33226193276B787B0084FA93 /* LaunchScreen.storyboard */,
+				33AE2DCA276D21C700CCFA49 /* GoogleService-Info.plist */,
 				33226196276B787B0084FA93 /* Info.plist */,
 			);
 			path = Trafel;
@@ -90,10 +105,11 @@
 		3322619E276B7D530084FA93 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				33AE2DC8276D136C00CCFA49 /* HomeViewController.swift */,
 				3322619C276B7D460084FA93 /* LoadingViewController.swift */,
-				332261A4276B8C1A0084FA93 /* SettingsViewController.swift */,
-				332261A9276BA8F00084FA93 /* OnboardingViewController.swift */,
 				33F9607A276BD27800CAB50C /* LoginViewController.swift */,
+				332261A9276BA8F00084FA93 /* OnboardingViewController.swift */,
+				332261A4276B8C1A0084FA93 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -131,6 +147,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E59AD872326E8C67F11F62FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6DA6272D788DB9A9E75BC90 /* Pods-Trafel.debug.xcconfig */,
+				E5710706744D5C3B6F4E3463 /* Pods-Trafel.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE3726D55C2B5AC63372E896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC992CB7F09D0AFD713909F8 /* Pods_Trafel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33226199276B787B0084FA93 /* Build configuration list for PBXNativeTarget "Trafel" */;
 			buildPhases = (
+				D3BC140403F237B4CC0E40B0 /* [CP] Check Pods Manifest.lock */,
 				33226181276B78790084FA93 /* Sources */,
 				33226182276B78790084FA93 /* Frameworks */,
 				33226183276B78790084FA93 /* Resources */,
+				69C1C4326098B615580A321A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,12 +224,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				33226195276B787B0084FA93 /* LaunchScreen.storyboard in Resources */,
-				33226192276B787B0084FA93 /* Assets.xcassets in Resources */,
+				33F9607D276CF51A00CAB50C /* Podfile in Resources */,
+				33AE2DCB276D21C700CCFA49 /* GoogleService-Info.plist in Resources */,
+				33AE2DC7276D08C100CCFA49 /* Assets.xcassets in Resources */,
 				33226190276B78790084FA93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69C1C4326098B615580A321A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trafel/Pods-Trafel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trafel/Pods-Trafel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Trafel/Pods-Trafel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3BC140403F237B4CC0E40B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trafel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33226181276B78790084FA93 /* Sources */ = {
@@ -212,6 +291,7 @@
 				332261AD276BBBEA0084FA93 /* OnboardingCollectionViewCell.swift in Sources */,
 				332261B0276BBD0D0084FA93 /* Slide.swift in Sources */,
 				33F9607B276BD27800CAB50C /* LoginViewController.swift in Sources */,
+				33AE2DC9276D136C00CCFA49 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +435,7 @@
 		};
 		3322619A276B787B0084FA93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6DA6272D788DB9A9E75BC90 /* Pods-Trafel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -374,6 +455,7 @@
 		};
 		3322619B276B787B0084FA93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5710706744D5C3B6F4E3463 /* Pods-Trafel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

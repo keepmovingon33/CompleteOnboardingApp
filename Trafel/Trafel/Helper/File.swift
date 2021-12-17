@@ -8,6 +8,16 @@
 import Foundation
 
 struct Constant {
+    
+    struct ReusableIdentifier {
+        static let onboardingCollectionViewCell = "CellItem"
+    }
+    
+    struct NavigationTitle {
+        static let settings = "Settings"
+        static let home = "Home"
+    }
+    
     struct Segue {
         static let showOnboarding = "showOnboarding"
         static let showLoginSignup = "showLoginSignup"

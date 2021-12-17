@@ -6,18 +6,20 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupView()
+        setupNavigationBar()
     }
     
-    private func setupView() {
-        view.backgroundColor = .gray
+    private func setupNavigationBar() {
+        navigationItem.title = Constant.NavigationTitle.settings
     }
+    
     
     @IBAction func loggedOutButtonTapped(_ sender: UIBarButtonItem) {
 //        let onboardingController = UIStoryboard(name: Constant.Segue.main, bundle: nil).instantiateViewController(identifier: Constant.Segue.onBoardingViewController)
@@ -27,6 +29,13 @@ class SettingsViewController: UIViewController {
 //        UIView.transition(with: window, duration: 0.5, options: .transitionCrossDissolve, animations: nil, completion: nil)
         
         // refactor code
-        PresenterManager.shared.show(vc: .onboarding)
+        
+        // show loading animation
+        MBProgressHUD.showAdded(to: view, animated: true)
+        delay(durationInSeconds: 2.0) {
+            // hide loading animation
+            MBProgressHUD.hide(for: self.view, animated: true)
+            PresenterManager.shared.show(vc: .onboarding)
+        }
     }
 }

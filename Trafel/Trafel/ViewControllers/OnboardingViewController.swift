@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol OnboardingDelegate: AnyObject {
+    func showMainTabBarController()
+}
+
 class OnboardingViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -44,6 +48,13 @@ class OnboardingViewController: UIViewController {
         performSegue(withIdentifier: Constant.Segue.showLoginSignup, sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Constant.Segue.showLoginSignup {
+            guard let destination = segue.destination as? LoginViewController else { return }
+            destination.delegate = self
+        }
+    }
+    
     private func showCaption(atIndex index: Int) {
         let slide = Slide.collection[index]
         titleLabel.text = slide.title
@@ -62,7 +73,9 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellItem", for: indexPath) as! OnboardingCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constant.ReusableIdentifier.onboardingCollectionViewCell, for: indexPath) as? OnboardingCollectionViewCell else {
+            return UICollectionViewCell()
+        }
         let imageName = Slide.collection[indexPath.item].imageName
         let image = UIImage(named: imageName) ?? UIImage()
         cell.configure(image: image)
@@ -81,5 +94,17 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let index = Int(collectionView.contentOffset.x / collectionView.frame.size.width)
         showCaption(atIndex: index)
+    }
+}
+
+extension OnboardingViewController: OnboardingDelegate {
+    func showMainTabBarController() {
+        // Dismiss Login screen
+        // show Main TabBar Controller
+        if let loginViewController = self.presentedViewController as? LoginViewController {
+            loginViewController.dismiss(animated: true) {
+                PresenterManager.shared.show(vc: .mainTabBarController)
+            }
+        }
     }
 }
