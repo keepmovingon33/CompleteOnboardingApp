@@ -5,15 +5,19 @@
 //  Created by sky on 12/16/21.
 //
 
-import UIKit
+import Loaf
 import MBProgressHUD
+import UIKit
 
 class SettingsViewController: UIViewController {
+    
+    private let authManager = AuthManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupNavigationBar()
+
     }
     
     private func setupNavigationBar() {
@@ -31,11 +35,35 @@ class SettingsViewController: UIViewController {
         // refactor code
         
         // show loading animation
+//        MBProgressHUD.showAdded(to: view, animated: true)
+//        delay(durationInSeconds: 2.0) {
+//            // hide loading animation
+//            MBProgressHUD.hide(for: self.view, animated: true)
+//            PresenterManager.shared.show(vc: .onboarding)
+//        }
+        
+        // Using Firebase Auth
+        
         MBProgressHUD.showAdded(to: view, animated: true)
-        delay(durationInSeconds: 2.0) {
-            // hide loading animation
+        delay(durationInSeconds: 1.0) { [weak self] in
+            guard let self = self else { return }
+            let result = self.authManager.logoutUser()
+            switch result {
+            case .success:
+                PresenterManager.shared.show(vc: .onboarding)
+            case .failure(let error):
+                Loaf(error.localizedDescription, state: .error, location: .top, sender: self).show()
+            }
             MBProgressHUD.hide(for: self.view, animated: true)
-            PresenterManager.shared.show(vc: .onboarding)
+            
+//            do {
+//                try firebaseAuth.signOut()
+//                MBProgressHUD.hide(for: self.view, animated: true)
+//                PresenterManager.shared.show(vc: .onboarding)
+//            } catch(let error) {
+//                print(error.localizedDescription)
+//                MBProgressHUD.hide(for: self.view, animated: true)
+//            }
         }
     }
 }

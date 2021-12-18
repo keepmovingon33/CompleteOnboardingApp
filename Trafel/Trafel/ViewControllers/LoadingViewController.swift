@@ -9,7 +9,7 @@ import UIKit
 
 class LoadingViewController: UIViewController {
     
-    private var isUserLoggedIn: Bool = false
+    private let auth = AuthManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class LoadingViewController: UIViewController {
         // if user is logged in => Main tab bar ViewController
         // else => show onboarding ViewController
         
-        if isUserLoggedIn {
+        if auth.isUserLoggedIn() {
 //            let mainTabBarController = UIStoryboard(name: Constant.Segue.main, bundle: nil).instantiateViewController(identifier: Constant.Segue.mainTabBarController)
 //            guard let sceneDelegate = view.window?.windowScene?.delegate as? SceneDelegate, let window = sceneDelegate.window else { return }
 //            window.rootViewController = mainTabBarController
